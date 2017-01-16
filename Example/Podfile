@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'SDMenuBarViewKit_Example' do
+  pod 'SDMenuBarViewKit', :path => '../'
+
+  target 'SDMenuBarViewKit_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
