@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
     s.name             = 'SDMenuBarViewKit'
-    s.version          = '0.0.2'
+    s.version          = '0.0.3'
     s.summary          = '带有公共头部,顶部菜单并且可以横向滚动切换tableView类库'
     s.homepage         = 'https://github.com/sudaotech/SDMenuBarViewKit'
     s.license          = { :type => 'MIT', :file => 'LICENSE' }

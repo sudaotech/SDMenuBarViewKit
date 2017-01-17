@@ -13,6 +13,7 @@
 #import <SDMenuBarViewKit/SDMenuBarItem.h>
 
 @interface SDViewController ()
+@property (nonatomic, weak) SDMenuBarView *menuBarView;
 
 @end
 
@@ -35,8 +36,21 @@
     
     headView.backgroundColor = [UIColor redColor];
     menuBarView.headerView = headView;
-    
+    self.menuBarView = menuBarView;
     [self.view addSubview:menuBarView];
 }
+- (IBAction)clickMe:(id)sender {
+    
+    if (self.menuBarView.headerView) {
+        self.menuBarView.headerView = nil;
+    } else {
+        UIView *headView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 160)];
+        
+        headView.backgroundColor = [UIColor redColor];
+        self.menuBarView.headerView = headView;
+
+    }
+}
+
 
 @end

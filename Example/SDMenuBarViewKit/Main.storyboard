@@ -22,7 +22,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" title="SDMenuBarViewKit" id="AwC-z0-BM0"/>
+                    <navigationItem key="navigationItem" title="SDMenuBarViewKit" id="AwC-z0-BM0">
+                        <barButtonItem key="rightBarButtonItem" title="点击我" id="gRk-Qn-zhx">
+                            <connections>
+                                <action selector="clickMe:" destination="whP-gf-Uak" id="dgA-K9-9ku"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tc2-Qw-aMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

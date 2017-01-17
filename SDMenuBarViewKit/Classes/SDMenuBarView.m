@@ -61,10 +61,14 @@ static NSInteger const kBasicTag        = 0xffff; //默认TAG起点
 
 - (void)setHeaderView:(UIView *)headerView
 {
+    [self.headerView removeFromSuperview];
+    
     _headerView = headerView;
     if (headerView) {
         [self.topView addSubview:headerView];
     }
+    [self setNeedsLayout];
+    [self.collectionView reloadData];
 }
 
 - (void)setBarItems:(NSArray<SDMenuBarItem *> *)barItems
