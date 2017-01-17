@@ -177,4 +177,17 @@ static NSInteger const kBasicTag        = 0xffff; //默认TAG起点
     }
 }
 
+- (void)dealloc
+{
+    [self.barItems enumerateObjectsUsingBlock:^(SDMenuBarItem * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        
+        @try {
+            [obj.tableView removeObserver:self forKeyPath:@"contentOffset"];
+        } @finally {
+            
+        }
+        
+    }];
+}
+
 @end
