@@ -23,6 +23,8 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		7794529068A8F8379965F557 /* Pods_SDMenuBarViewKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51A9EA7A77843FAA3C8EC893 /* Pods_SDMenuBarViewKit_Example.framework */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		DE65B4531E2CDDC20075AC7D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE65B4521E2CDDC20075AC7D /* LaunchScreen.storyboard */; };
+		DE65B4641E2CEA910075AC7D /* SDDemoTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE65B4631E2CEA910075AC7D /* SDDemoTableView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +39,7 @@
 
 /* Begin PBXFileReference section */
 		2ECAAB6029EFF8981438ABEB /* Pods-SDMenuBarViewKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDMenuBarViewKit_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SDMenuBarViewKit_Example/Pods-SDMenuBarViewKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		3809CA9A5A7F0E20CDB91A39 /* SDMenuBarViewKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = SDMenuBarViewKit.podspec; path = ../SDMenuBarViewKit.podspec; sourceTree = "<group>"; };
+		3809CA9A5A7F0E20CDB91A39 /* SDMenuBarViewKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SDMenuBarViewKit.podspec; path = ../SDMenuBarViewKit.podspec; sourceTree = "<group>"; };
 		394B888D3404622283D604F3 /* Pods-SDMenuBarViewKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDMenuBarViewKit_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SDMenuBarViewKit_Tests/Pods-SDMenuBarViewKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		51A9EA7A77843FAA3C8EC893 /* Pods_SDMenuBarViewKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SDMenuBarViewKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		53E616496B578B9E178F4EB2 /* Pods_SDMenuBarViewKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SDMenuBarViewKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,10 +62,13 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		6B843FAF841A4DACF48B7A12 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		6B843FAF841A4DACF48B7A12 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		8D928292F7F15F5E520017E9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		8D928292F7F15F5E520017E9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		C654AFD2632EE20AF1BA7482 /* Pods-SDMenuBarViewKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDMenuBarViewKit_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-SDMenuBarViewKit_Example/Pods-SDMenuBarViewKit_Example.release.xcconfig"; sourceTree = "<group>"; };
+		DE65B4521E2CDDC20075AC7D /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DE65B4621E2CEA910075AC7D /* SDDemoTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDDemoTableView.h; sourceTree = "<group>"; };
+		DE65B4631E2CEA910075AC7D /* SDDemoTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDDemoTableView.m; sourceTree = "<group>"; };
 		EC605389EC4A990628E602C9 /* Pods-SDMenuBarViewKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDMenuBarViewKit_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SDMenuBarViewKit_Tests/Pods-SDMenuBarViewKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -148,6 +153,9 @@
 				6003F5A6195388D20070C39A /* SDViewController.m */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
+				DE65B4521E2CDDC20075AC7D /* LaunchScreen.storyboard */,
+				DE65B4621E2CEA910075AC7D /* SDDemoTableView.h */,
+				DE65B4631E2CEA910075AC7D /* SDDemoTableView.m */,
 			);
 			name = "Example for SDMenuBarViewKit";
 			path = SDMenuBarViewKit;
@@ -247,6 +255,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = sfuser;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = 7Y94DWLA69;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -277,6 +288,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
+				DE65B4531E2CDDC20075AC7D /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
@@ -393,6 +405,7 @@
 				6003F59E195388D20070C39A /* SDAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* SDViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				DE65B4641E2CEA910075AC7D /* SDDemoTableView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -512,7 +525,7 @@
 			baseConfigurationReference = 2ECAAB6029EFF8981438ABEB /* Pods-SDMenuBarViewKit_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = 7Y94DWLA69;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SDMenuBarViewKit/SDMenuBarViewKit-Prefix.pch";
 				INFOPLIST_FILE = "SDMenuBarViewKit/SDMenuBarViewKit-Info.plist";
@@ -528,7 +541,7 @@
 			baseConfigurationReference = C654AFD2632EE20AF1BA7482 /* Pods-SDMenuBarViewKit_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = 7Y94DWLA69;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SDMenuBarViewKit/SDMenuBarViewKit-Prefix.pch";
 				INFOPLIST_FILE = "SDMenuBarViewKit/SDMenuBarViewKit-Info.plist";

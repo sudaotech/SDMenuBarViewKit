@@ -1,0 +1,16 @@
+PODS:
+  - SDMenuBarViewKit (0.0.1)
+
+DEPENDENCIES:
+  - SDMenuBarViewKit (from `../`)
+
+EXTERNAL SOURCES:
+  SDMenuBarViewKit:
+    :path: ../
+
+SPEC CHECKSUMS:
+  SDMenuBarViewKit: 46bc4f9d62c3dfc81ad83f5723ce6f714b442eb6
+
+PODFILE CHECKSUM: 7d50de0edcef6508cc1fed8f6123b2ba2303091f
+
+COCOAPODS: 1.1.1

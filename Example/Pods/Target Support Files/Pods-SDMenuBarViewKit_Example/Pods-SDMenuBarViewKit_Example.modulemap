@@ -1,0 +1,6 @@
+framework module Pods_SDMenuBarViewKit_Example {
+  umbrella header "Pods-SDMenuBarViewKit_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
