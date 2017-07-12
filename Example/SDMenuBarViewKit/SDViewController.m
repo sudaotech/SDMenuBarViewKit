@@ -25,14 +25,20 @@
     
     self.automaticallyAdjustsScrollViewInsets = NO;
     
-    SDMenuBarItem *item1 = [SDMenuBarItem barItemWithTitle:@"课题" tableView:[SDDemoTableView new]];
-    SDMenuBarItem *item2 = [SDMenuBarItem barItemWithTitle:@"话题" tableView:[SDDemoTableView new]];
-    SDMenuBarItem *item3 = [SDMenuBarItem barItemWithTitle:@"政策" tableView:[SDDemoTableView new]];
-    SDMenuBarItem *item4 = [SDMenuBarItem barItemWithTitle:@"新闻" tableView:[SDDemoTableView new]];
+    SDMenuBarItem *item1 = [SDMenuBarItem barItemWithTitle:@"课题" scrollView:[SDDemoTableView new]];
+    SDMenuBarItem *item2 = [SDMenuBarItem barItemWithTitle:@"话题" scrollView:[SDDemoTableView new]];
+    SDMenuBarItem *item3 = [SDMenuBarItem barItemWithTitle:@"政策" scrollView:[SDDemoTableView new]];
+    SDMenuBarItem *item4 = [SDMenuBarItem barItemWithTitle:@"新闻" scrollView:[SDDemoTableView new]];
     
     SDMenuBarView *menuBarView = [[SDMenuBarView alloc] initWithFrame:CGRectMake(0, 64, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height - 64)];
     menuBarView.barItems = @[item1, item2, item3, item4];
     UIView *headView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 160)];
+    menuBarView.menuBar.indicatorLineColor = [UIColor orangeColor];
+    menuBarView.menuBar.normalColor = [UIColor purpleColor];
+    menuBarView.menuBar.selectedColor = [UIColor cyanColor];
+    menuBarView.menuBar.bottomLineColor = [UIColor purpleColor];
+    menuBarView.menuBar.bottomLineHeight = 2;
+    menuBarView.menuBar.indicatorLineHeight = 4;
     
     headView.backgroundColor = [UIColor redColor];
     menuBarView.headerView = headView;

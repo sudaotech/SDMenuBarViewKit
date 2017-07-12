@@ -89,9 +89,9 @@ static NSInteger const kBasicTag = 0xf890;
     
     self.scrollView.frame   = self.bounds;
     self.lineView.frame     = CGRectMake(0,
-                                         CGRectGetHeight(self.frame) - 0.5,
+                                         CGRectGetHeight(self.frame) - self.bottomLineHeight,
                                          self.frame.size.width,
-                                         0.5);
+                                         self.bottomLineHeight);
     
     CGFloat buttonW = [self fetchMaxWidth];
     
@@ -105,9 +105,9 @@ static NSInteger const kBasicTag = 0xf890;
             
             weakSelf.indicatorLineView.frame = CGRectMake(
                                         CGRectGetMinX(rect),
-                                        CGRectGetMaxY(obj.frame) - 2,
+                                        CGRectGetMaxY(obj.frame) - self.indicatorLineHeight,
                                         CGRectGetWidth(rect),
-                                        2);
+                                        self.indicatorLineHeight);
         }
     }];
     
@@ -143,9 +143,9 @@ static NSInteger const kBasicTag = 0xf890;
         
         weakSelf.indicatorLineView.frame = CGRectMake(
                                         CGRectGetMinX(rect),
-                                        CGRectGetMaxY(weakSelf.selectedButton.frame) - 2,
+                                        CGRectGetMaxY(weakSelf.selectedButton.frame) - self.indicatorLineHeight,
                                         CGRectGetWidth(rect),
-                                        2);
+                                        self.indicatorLineHeight);
     }];
 }
 
@@ -175,6 +175,36 @@ static NSInteger const kBasicTag = 0xf890;
 }
 
 #pragma mark - lazy
+
+@synthesize indicatorLineHeight = _indicatorLineHeight;
+- (void)setIndicatorLineHeight:(CGFloat)indicatorLineHeight {
+    _indicatorLineHeight = indicatorLineHeight;
+    [self setNeedsLayout];
+}
+
+- (CGFloat)indicatorLineHeight {
+    return _indicatorLineHeight == 0 ? 2 : _indicatorLineHeight;
+}
+
+
+@synthesize bottomLineHeight = _bottomLineHeight;
+
+- (void)setBottomLineHeight:(CGFloat)bottomLineHeight {
+    _bottomLineHeight = bottomLineHeight;
+    [self setNeedsLayout];
+}
+
+- (CGFloat)bottomLineHeight {
+    return _bottomLineHeight == 0 ? 0.5 : _bottomLineHeight;
+}
+
+- (void)setBottomLineColor:(UIColor *)bottomLineColor {
+    _bottomLineColor = bottomLineColor;
+    self.lineView.backgroundColor = bottomLineColor;
+}
+
+@synthesize selectedColor = _selectedColor;
+
 - (UIColor *)selectedColor
 {
     if (!_selectedColor) {
@@ -183,6 +213,14 @@ static NSInteger const kBasicTag = 0xf890;
     return _selectedColor;
 }
 
+- (void)setSelectedColor:(UIColor *)selectedColor {
+    _selectedColor = selectedColor;
+    [self.buttonList enumerateObjectsUsingBlock:^(UIButton * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        [obj setTitleColor:selectedColor forState:UIControlStateSelected];
+    }];
+}
+
+@synthesize normalColor = _normalColor;
 - (UIColor *)normalColor
 {
     if (!_normalColor) {
@@ -191,12 +229,25 @@ static NSInteger const kBasicTag = 0xf890;
     return _normalColor;
 }
 
+- (void)setNormalColor:(UIColor *)normalColor {
+    _normalColor = normalColor;
+    [self.buttonList enumerateObjectsUsingBlock:^(UIButton * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        [obj setTitleColor:normalColor forState:UIControlStateNormal];
+    }];
+}
+
+@synthesize indicatorLineColor = _indicatorLineColor;
 - (UIColor *)indicatorLineColor
 {
     if (!_indicatorLineColor) {
         _indicatorLineColor = [UIColor colorWithHexString:@"#E52C4E"];
     }
     return _indicatorLineColor;
+}
+
+- (void)setIndicatorLineColor:(UIColor *)indicatorLineColor {
+    _indicatorLineColor = indicatorLineColor;
+    self.indicatorLineView.backgroundColor = _indicatorLineColor;
 }
 
 - (NSMutableArray<UIButton *> *)buttonList

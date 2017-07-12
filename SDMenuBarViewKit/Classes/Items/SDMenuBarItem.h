@@ -17,8 +17,8 @@
 /**
  内容对应的tableView
  */
-@property (nonatomic, strong) UITableView   *tableView;
+@property (nonatomic, strong) UIScrollView   *scrollView;
 
-+ (instancetype)barItemWithTitle:(NSString *)title tableView:(UITableView *)tableView;
++ (instancetype)barItemWithTitle:(NSString *)title scrollView:(UIScrollView *)scrollView;
 
 @end

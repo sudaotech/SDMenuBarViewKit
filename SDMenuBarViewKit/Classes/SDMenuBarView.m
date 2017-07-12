@@ -8,7 +8,7 @@
 
 #import "SDMenuBarView.h"
 
-#import "SDMenuBar.h"
+//#import "SDMenuBar.h"
 #import "SDMenuBarItem.h"
 
 #import "UIView+SDDeleteSubView.h"
@@ -112,23 +112,23 @@ static NSInteger const kBasicTag        = 0xffff; //默认TAG起点
     
     [cell.contentView removeAllSubview];
 
-    UITableView *tableView = self.barItems[indexPath.item].tableView;
-    if (tableView) {
-        tableView.backgroundColor       = [UIColor whiteColor];
-        tableView.frame                 = self.bounds;
-        tableView.tag                   = kBasicTag + indexPath.item;
+    UIScrollView *scrollView = self.barItems[indexPath.item].scrollView;
+    if (scrollView) {
+        scrollView.backgroundColor       = [UIColor whiteColor];
+        scrollView.frame                 = self.bounds;
+        scrollView.tag                   = kBasicTag + indexPath.item;
         
-        tableView.contentInset          = UIEdgeInsetsMake(
+        scrollView.contentInset          = UIEdgeInsetsMake(
                                                            CGRectGetHeight(self.topView.frame),
                                                            0,
                                                            0,
                                                            0);
-        tableView.scrollIndicatorInsets = UIEdgeInsetsMake(
+        scrollView.scrollIndicatorInsets = UIEdgeInsetsMake(
                                                            CGRectGetHeight(self.topView.frame),
                                                            0,
                                                            0,
                                                            0);
-        [cell.contentView addSubview:tableView];
+        [cell.contentView addSubview:scrollView];
     } else {
         NSLog(@"no tableView found in menuBarItem(%@).....", self.barItems[indexPath.item]);
     }
@@ -186,7 +186,7 @@ static NSInteger const kBasicTag        = 0xffff; //默认TAG起点
     [self.barItems enumerateObjectsUsingBlock:^(SDMenuBarItem * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         
         @try {
-            [obj.tableView removeObserver:self forKeyPath:@"contentOffset"];
+            [obj.scrollView removeObserver:self forKeyPath:@"contentOffset"];
         } @finally {
             
         }

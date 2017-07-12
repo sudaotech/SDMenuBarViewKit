@@ -7,10 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SDMenuBar.h"
 
 @class SDMenuBarItem;
 
 @interface SDMenuBarView : UIView
+
+@property (nonatomic, strong, readonly) SDMenuBar         *menuBar;           // 顶部菜单
 
 /**
  头部视图

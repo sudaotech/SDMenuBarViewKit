@@ -17,9 +17,12 @@
 @interface SDMenuBar : UIView
 @property (nonatomic, strong) NSArray<NSString *> *titleList;
 
+@property (nonatomic, assign) CGFloat bottomLineHeight;     // 底部分割线的高度
+@property (nonatomic, strong) UIColor *bottomLineColor;     // 底部分割线的颜色， 默认#eeeeee
 @property (nonatomic, strong) UIColor *selectedColor;       // 菜单选中时的颜色， 默认#333333
 @property (nonatomic, strong) UIColor *normalColor;         // 菜单普通状态下的颜色， 默认#999999
 @property (nonatomic, strong) UIColor *indicatorLineColor;  // 指示线颜色， 默认#E52C4E
+@property (nonatomic, assign) CGFloat indicatorLineHeight;  // 指示线的高度
 
 @property (nonatomic, weak)   id<SDMenuBarDelegate> delegate; //代理
 

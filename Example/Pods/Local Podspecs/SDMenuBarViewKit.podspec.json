@@ -1,6 +1,6 @@
 {
   "name": "SDMenuBarViewKit",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "summary": "带有公共头部,顶部菜单并且可以横向滚动切换tableView类库",
   "homepage": "https://github.com/sudaotech/SDMenuBarViewKit",
   "license": {
@@ -12,7 +12,7 @@
   },
   "source": {
     "git": "https://github.com/sudaotech/SDMenuBarViewKit.git",
-    "tag": "0.0.1"
+    "tag": "0.0.3"
   },
   "platforms": {
     "ios": "8.0"

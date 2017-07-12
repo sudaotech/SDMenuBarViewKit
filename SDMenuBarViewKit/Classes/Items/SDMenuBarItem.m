@@ -10,12 +10,12 @@
 
 @implementation SDMenuBarItem
 
-+ (instancetype)barItemWithTitle:(NSString *)title tableView:(UITableView *)tableView
++ (instancetype)barItemWithTitle:(NSString *)title scrollView:(UIScrollView *)scrollView
 {
     SDMenuBarItem *item = [[self alloc] init];
     
     item.title          = title;
-    item.tableView      = tableView;
+    item.scrollView      = scrollView;
     
     return item;
 }

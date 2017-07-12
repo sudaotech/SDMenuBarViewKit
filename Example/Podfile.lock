@@ -1,5 +1,5 @@
 PODS:
-  - SDMenuBarViewKit (0.0.1)
+  - SDMenuBarViewKit (0.0.3)
 
 DEPENDENCIES:
   - SDMenuBarViewKit (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  SDMenuBarViewKit: 46bc4f9d62c3dfc81ad83f5723ce6f714b442eb6
+  SDMenuBarViewKit: 811ed13e9c089d2eaa4f149afb91cb3e9270514b
 
 PODFILE CHECKSUM: 7d50de0edcef6508cc1fed8f6123b2ba2303091f
 
-COCOAPODS: 1.1.1
+COCOAPODS: 1.2.0
