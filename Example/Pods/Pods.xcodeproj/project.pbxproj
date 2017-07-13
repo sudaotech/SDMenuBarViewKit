@@ -17,6 +17,8 @@
 		6E9337E1BA2D0800B5C8286A9DB13251 /* SDMenuBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 78AA8DA3237893035C5A5606A181E775 /* SDMenuBarItem.m */; };
 		73F40FFE0B0A5B6839BCBE008A01D414 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		7617CD6D47A487688B37D11A104EEAE9 /* Pods-SDMenuBarViewKit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 61E2404E816EAA7620CAECDFE33B0EC2 /* Pods-SDMenuBarViewKit_Example-dummy.m */; };
+		8953E5981F17684100B2051A /* NSObject+RemoveKVO.h in Headers */ = {isa = PBXBuildFile; fileRef = 8953E5961F17684100B2051A /* NSObject+RemoveKVO.h */; };
+		8953E5991F17684100B2051A /* NSObject+RemoveKVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 8953E5971F17684100B2051A /* NSObject+RemoveKVO.m */; };
 		A4BFA3FAF79D5207C9F722D183D0C04C /* SDMenuBarItem.h in Headers */ = {isa = PBXBuildFile; fileRef = E3E2F29932CDE3AC1C32A38F83C17376 /* SDMenuBarItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B26CC7AFE326C77A8CDD02F7BC6F7FA9 /* UIView+SDDeleteSubView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D8772A984B6612D3852793CA5BA1BE0 /* UIView+SDDeleteSubView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B34299C8D4FB1B93C8EF6288B8E8EB29 /* UIView+SDDeleteSubView.m in Sources */ = {isa = PBXBuildFile; fileRef = C74C54E211FD0A64D3782D3DD2B5EACF /* UIView+SDDeleteSubView.m */; };
@@ -42,10 +44,10 @@
 
 /* Begin PBXFileReference section */
 		0A55D5D66262C70A0FAEF7CEF8DDAD91 /* Pods-SDMenuBarViewKit_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SDMenuBarViewKit_Example-resources.sh"; sourceTree = "<group>"; };
-		11B98162AE015A76CEABA1AF8ED686B5 /* Pods-SDMenuBarViewKit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-SDMenuBarViewKit_Tests.modulemap"; sourceTree = "<group>"; };
+		11B98162AE015A76CEABA1AF8ED686B5 /* Pods-SDMenuBarViewKit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SDMenuBarViewKit_Tests.modulemap"; sourceTree = "<group>"; };
 		12827993DA6D29F16A5BC4D2104DBDD3 /* Pods-SDMenuBarViewKit_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SDMenuBarViewKit_Tests-umbrella.h"; sourceTree = "<group>"; };
 		15CDB1F6F966AD6822A31151D619D905 /* SDMenuBarView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SDMenuBarView.m; sourceTree = "<group>"; };
-		1B9FC9BAB72A1BBF13E311B22523F5CA /* Pods_SDMenuBarViewKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SDMenuBarViewKit_Example.framework; path = "Pods-SDMenuBarViewKit_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B9FC9BAB72A1BBF13E311B22523F5CA /* Pods_SDMenuBarViewKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SDMenuBarViewKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2305E3E05FBBC86D5832BB1907C12122 /* SDCollectionViewLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SDCollectionViewLayout.h; sourceTree = "<group>"; };
 		37C8C9981E02A51EE666A88A61B65780 /* Pods-SDMenuBarViewKit_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SDMenuBarViewKit_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		3E2C4018B6411285C25641341BC127CA /* SDMenuBar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SDMenuBar.m; sourceTree = "<group>"; };
@@ -62,15 +64,17 @@
 		643817A339D697F7B2C74BDA8018208E /* Pods-SDMenuBarViewKit_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SDMenuBarViewKit_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		78AA8DA3237893035C5A5606A181E775 /* SDMenuBarItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SDMenuBarItem.m; sourceTree = "<group>"; };
-		8EA5E97F1CEACB5C0EB6C533CB241F1B /* SDMenuBarViewKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SDMenuBarViewKit.framework; path = SDMenuBarViewKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8EC71435E845BB8A3865D5DDC0EBBE25 /* SDMenuBarViewKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SDMenuBarViewKit.modulemap; sourceTree = "<group>"; };
+		8953E5961F17684100B2051A /* NSObject+RemoveKVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+RemoveKVO.h"; sourceTree = "<group>"; };
+		8953E5971F17684100B2051A /* NSObject+RemoveKVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+RemoveKVO.m"; sourceTree = "<group>"; };
+		8EA5E97F1CEACB5C0EB6C533CB241F1B /* SDMenuBarViewKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SDMenuBarViewKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EC71435E845BB8A3865D5DDC0EBBE25 /* SDMenuBarViewKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SDMenuBarViewKit.modulemap; sourceTree = "<group>"; };
 		92C1955DA2A1478EC42732B8FD0C4830 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A69E1A4EE94E70950DA8DC627A112176 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AAFFE32AC66706968C1692C8DDACB68F /* SDMenuBarViewKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SDMenuBarViewKit-dummy.m"; sourceTree = "<group>"; };
 		AF5A25022E39B740BCF3A8A0CA4B40DF /* SDMenuBarViewKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SDMenuBarViewKit-umbrella.h"; sourceTree = "<group>"; };
 		B3636A74B6AE7AB7A821F2F88B5C3D53 /* SDCollectionViewLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SDCollectionViewLayout.m; sourceTree = "<group>"; };
-		C05AF31C3293B32F7E58424E62479048 /* Pods-SDMenuBarViewKit_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-SDMenuBarViewKit_Example.modulemap"; sourceTree = "<group>"; };
+		C05AF31C3293B32F7E58424E62479048 /* Pods-SDMenuBarViewKit_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SDMenuBarViewKit_Example.modulemap"; sourceTree = "<group>"; };
 		C74C54E211FD0A64D3782D3DD2B5EACF /* UIView+SDDeleteSubView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+SDDeleteSubView.m"; sourceTree = "<group>"; };
 		CCB3F97F442383B0C940375082485F0F /* Pods-SDMenuBarViewKit_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SDMenuBarViewKit_Tests-resources.sh"; sourceTree = "<group>"; };
 		CE02C5CFAB5F18C83CD82BE719F1A797 /* Pods-SDMenuBarViewKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SDMenuBarViewKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -79,7 +83,7 @@
 		D5171B8847F3FD608E1D4A7B4F3FA489 /* SDMenuBarViewKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SDMenuBarViewKit.xcconfig; sourceTree = "<group>"; };
 		E0BE2C768B04E75D6515256D10BB5295 /* UIColor+SDHex.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIColor+SDHex.m"; sourceTree = "<group>"; };
 		E3E2F29932CDE3AC1C32A38F83C17376 /* SDMenuBarItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SDMenuBarItem.h; sourceTree = "<group>"; };
-		E698859A7BB8BF0C56C8FC5E5AE61021 /* Pods_SDMenuBarViewKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SDMenuBarViewKit_Tests.framework; path = "Pods-SDMenuBarViewKit_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E698859A7BB8BF0C56C8FC5E5AE61021 /* Pods_SDMenuBarViewKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SDMenuBarViewKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE09E9A873E19E8297477CCE1DD7BA6A /* Pods-SDMenuBarViewKit_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SDMenuBarViewKit_Example-frameworks.sh"; sourceTree = "<group>"; };
 		F762216A05684909794B306A2C241978 /* UIColor+SDHex.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIColor+SDHex.h"; sourceTree = "<group>"; };
 		FAD0A7AF1950031A00C18D075E83BEEE /* Pods-SDMenuBarViewKit_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SDMenuBarViewKit_Example-umbrella.h"; sourceTree = "<group>"; };
@@ -124,8 +128,9 @@
 				DAF78339E5386898B048154C959B067C /* Expand */,
 				FEB451ACABDB4CCCAEA9ECDA9B0EA75D /* FlowLayout */,
 				75B28EAB27B2D05AB9A0249DC481D379 /* Items */,
+				8953E5961F17684100B2051A /* NSObject+RemoveKVO.h */,
+				8953E5971F17684100B2051A /* NSObject+RemoveKVO.m */,
 			);
-			name = Classes;
 			path = Classes;
 			sourceTree = "<group>";
 		};
@@ -170,7 +175,6 @@
 			children = (
 				0734827235DDF4288B6300BB88371641 /* Classes */,
 			);
-			name = SDMenuBarViewKit;
 			path = SDMenuBarViewKit;
 			sourceTree = "<group>";
 		};
@@ -180,7 +184,6 @@
 				E3E2F29932CDE3AC1C32A38F83C17376 /* SDMenuBarItem.h */,
 				78AA8DA3237893035C5A5606A181E775 /* SDMenuBarItem.m */,
 			);
-			name = Items;
 			path = Items;
 			sourceTree = "<group>";
 		};
@@ -252,7 +255,6 @@
 				5D8772A984B6612D3852793CA5BA1BE0 /* UIView+SDDeleteSubView.h */,
 				C74C54E211FD0A64D3782D3DD2B5EACF /* UIView+SDDeleteSubView.m */,
 			);
-			name = Expand;
 			path = Expand;
 			sourceTree = "<group>";
 		};
@@ -280,7 +282,6 @@
 				2305E3E05FBBC86D5832BB1907C12122 /* SDCollectionViewLayout.h */,
 				B3636A74B6AE7AB7A821F2F88B5C3D53 /* SDCollectionViewLayout.m */,
 			);
-			name = FlowLayout;
 			path = FlowLayout;
 			sourceTree = "<group>";
 		};
@@ -294,6 +295,7 @@
 				31473DE7511C5F5B66DD2F6E71BA4660 /* SDCollectionViewLayout.h in Headers */,
 				43E678F1C48DEB62E9965D63D59F3B89 /* SDMenuBar.h in Headers */,
 				A4BFA3FAF79D5207C9F722D183D0C04C /* SDMenuBarItem.h in Headers */,
+				8953E5981F17684100B2051A /* NSObject+RemoveKVO.h in Headers */,
 				D948BAD7A0A453F73029397A0F9EC8AD /* SDMenuBarView.h in Headers */,
 				B8EF82B302FE05CC2B57C11EA34E6BB1 /* SDMenuBarViewKit-umbrella.h in Headers */,
 				00D17FD33FBCF4AD0860C97A1D508ABA /* UIColor+SDHex.h in Headers */,
@@ -405,6 +407,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8953E5991F17684100B2051A /* NSObject+RemoveKVO.m in Sources */,
 				50624F3E5357C19FDC585DC7ED832F69 /* SDCollectionViewLayout.m in Sources */,
 				63E7D830C41FD073D3AD60681BDAB875 /* SDMenuBar.m in Sources */,
 				6E9337E1BA2D0800B5C8286A9DB13251 /* SDMenuBarItem.m in Sources */,
